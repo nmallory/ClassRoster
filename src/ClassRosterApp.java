@@ -134,31 +134,39 @@ public class ClassRosterApp {
 		for (int i=0; i < studentHometown.length; i++ ) {
 			System.out.println("What would you like to know about " + studentArray[name] + "? (enter 'hometown' or 'favorite food'):");
 			String hometown = sc.nextLine();
+
+			if(hometown.equalsIgnoreCase(hometown)){
+				System.out.println(studentArray[name] + " is from " + studentHometown[name]);
+				
+				System.out.println("Would you like to know more? (enter 'y' or 'n'):");
+				
+				//System.out.println(studentArray[name] + " loves " + studentFood[name]);
+				
+				//Clears out scanner
+				sc.nextLine();
+				
+			}while(choice.equalsIgnoreCase("y")){
+				
+			}
+			}
+			
+	}	
+		}	
+	//}	
+//}			
+				
+		
+			
 			
 		
-			while(!hometown.equalsIgnoreCase(hometown)){
-				System.out.println(studentArray[name] + " is from " + studentHometown[name]);
-			} 		
-			
-			System.out.println(studentArray[name] + " loves " + studentFood[name]);
-			}
-			
-			
-			}
-			
 	
-		}
+		//}
 			
 		//}
 		
 	
 			
 		//}//end while
-		
-	
-			
-
-
 
 
 	
@@ -166,23 +174,4 @@ public class ClassRosterApp {
 	
 	
 	
-		
-		//Add exceptions
-		
-		//If user enters other choice, display message that data does not exist
-		//System.out.println("That data does not exist. Please try again. (enter 'hometown' or 'favorite food: ");
-		
-		//If user enters correct choice, print out info. 
-		
-		//Ask what else would they like to know
-		//System.out.println("Would you like to know more? (enter 'yes' or 'no': ");
-		
-		//Bye message
-		//System.out.println("Thanks");
-		
-	
-	 
-		
-//}
 
-//}
